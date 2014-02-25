@@ -14,3 +14,7 @@ var globalVar = require("./js/globalVar.js");
 console.log("globalVar", globalVar);
 console.log("window.globalVar", window.globalVar);
 console.log("global.globalVar", global.globalVar);
+
+var modulePattern = require("./js/module-pattern");
+console.log("modulePattern", modulePattern);
+console.log("window.modulePattern", window.modulePattern);

@@ -22,6 +22,7 @@
     "transform": [ "browserify-shim" ]
   },
   "browserify-shim": {
-    "./js/globalVar.js": "globalVar"
+    "./js/globalVar.js": "globalVar",
+    "./js/module-pattern.js": "modulePattern"
   }
 }
