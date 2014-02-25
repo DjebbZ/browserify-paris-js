@@ -1,36 +1,20 @@
 {
   "name": "browserify-paris-js",
   "version": "0.0.0",
-  "description": "Talk about browserify",
+  "description": "Talk about browserify at Paris.js meetup #34",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "browserify index.js -o build.js",
-    "build-common": "browserify -r ./js/ui-components/button > build/common.js",
-    "build-index": "browserify -x ./js/ui-components/button index.js > build/index.js",
-    "build-standalone": "browserify -s standalone index.js > build/standalone.js"
+    "build-js": "browserify index.js -o build/build.js"
   },
   "keywords": [
     "browserify",
-    "talk"
+    "talk",
+    "paris.js"
   ],
   "author": "Khalid Jebbari <khalid.jebbari@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "browserify": "~3.24.9",
-    "browserify-shim": "~3.2.2",
-    "cssify": "~0.4.1",
-    "deamdify": "~0.1.1"
-  },
-  "browserify": {
-    "transform": [
-      "browserify-shim",
-      "cssify",
-      "deamdify"
-    ]
-  },
-  "browserify-shim": {
-    "./js/globalVar.js": "globalVar",
-    "./js/module-pattern.js": "modulePattern"
+    "browserify": "~3.24.9"
   }
 }
