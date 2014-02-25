@@ -16,10 +16,14 @@
   "license": "MIT",
   "devDependencies": {
     "browserify": "~3.24.9",
-    "browserify-shim": "~3.2.2"
+    "browserify-shim": "~3.2.2",
+    "cssify": "~0.4.1"
   },
   "browserify": {
-    "transform": [ "browserify-shim" ]
+    "transform": [
+      "browserify-shim",
+      "cssify"
+    ]
   },
   "browserify-shim": {
     "./js/globalVar.js": "globalVar",
