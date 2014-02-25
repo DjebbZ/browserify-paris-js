@@ -17,12 +17,14 @@
   "devDependencies": {
     "browserify": "~3.24.9",
     "browserify-shim": "~3.2.2",
-    "cssify": "~0.4.1"
+    "cssify": "~0.4.1",
+    "deamdify": "~0.1.1"
   },
   "browserify": {
     "transform": [
       "browserify-shim",
-      "cssify"
+      "cssify",
+      "deamdify"
     ]
   },
   "browserify-shim": {

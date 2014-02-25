@@ -16,3 +16,6 @@ console.log("window.modulePattern", window.modulePattern);
 
 var makeButton = require("./js/ui/button");
 makeButton(document.body);
+
+var amd = require("./js/amd");
+console.log("amd", amd);
